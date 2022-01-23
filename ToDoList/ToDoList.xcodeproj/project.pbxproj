@@ -11,6 +11,7 @@
 		2B5625F2279979EA0072294D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5625F1279979EA0072294D /* ContentView.swift */; };
 		2B5625F4279979EC0072294D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5625F3279979EC0072294D /* Assets.xcassets */; };
 		2B5625F7279979EC0072294D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5625F6279979EC0072294D /* Preview Assets.xcassets */; };
+		2B5625FE27997F280072294D /* ToDoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5625FD27997F280072294D /* ToDoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2B5625F1279979EA0072294D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B5625F3279979EC0072294D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5625F6279979EC0072294D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B5625FD27997F280072294D /* ToDoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2B5625EF279979EA0072294D /* ToDoListApp.swift */,
 				2B5625F1279979EA0072294D /* ContentView.swift */,
+				2B5625FD27997F280072294D /* ToDoData.swift */,
 				2B5625F3279979EC0072294D /* Assets.xcassets */,
 				2B5625F5279979EC0072294D /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5625FE27997F280072294D /* ToDoData.swift in Sources */,
 				2B5625F2279979EA0072294D /* ContentView.swift in Sources */,
 				2B5625F0279979EA0072294D /* ToDoListApp.swift in Sources */,
 			);

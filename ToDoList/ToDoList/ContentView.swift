@@ -8,9 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    // @Published var ToDoList: [ToDo] = []
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            
+            // ToDoをリスト表示
+            
+            
+            Spacer()
+            
+            HStack {
+                Button("Delete") {
+                    
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.all)
+                .background(Color.red)
+                .accentColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+                .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                
+                Button("Add") {
+                    
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.all)
+                .background(Color.blue)
+                .accentColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+                .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+            }
+        }
     }
 }
 

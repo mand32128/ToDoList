@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    // @Published var ToDoList: [ToDo] = []
+    @ObservedObject var toDoData = ToDoData()
     
     var body: some View {
         VStack {
             
             // ToDoをリスト表示
-            
             
             Spacer()
             

@@ -13,11 +13,15 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            // ToDoをリスト表示
+            // ToDoをリスト表示　チェックボックスの追加が必要
+            List(toDoData.toDoList) { toDo in
+                Text(toDo.body)
+            }
             
             Spacer()
             
             HStack {
+                // ボタンの領域が狭いから変える
                 Button("Delete") {
                     
                 }
@@ -29,7 +33,8 @@ struct ContentView: View {
                 .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
                 
                 Button("Add") {
-                    
+                    // タスク内容の入力画面を表示させる
+                    toDoData.addToDo(body: "aa")
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.all)

@@ -21,27 +21,32 @@ struct ContentView: View {
             Spacer()
             
             HStack {
-                // ボタンの領域が狭いから変える
-                Button("Delete") {
-                    
-                }
-                .frame(maxWidth: .infinity)
-                .padding(.all)
-                .background(Color.red)
-                .accentColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
-                .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
                 
-                Button("Add") {
+                Button(action: {
+                    
+                }) {
+                    Text("Delete")
+                        .frame(maxWidth: .infinity)
+                        .padding(.all)
+                        .background(Color.red)
+                        .accentColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                }
+                
+                Button(action: {
                     // タスク内容の入力画面を表示させる
                     toDoData.addToDo(body: "aa")
+                }) {
+                    Text("Add")
+                        .frame(maxWidth: .infinity)
+                        .padding(.all)
+                        .background(Color.blue)
+                        .accentColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.all)
-                .background(Color.blue)
-                .accentColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
-                .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                
             }
         }
     }

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @ObservedObject var toDoData = ToDoData()
+    @State var showAdd = false
     
     var body: some View {
         VStack {
@@ -35,8 +37,8 @@ struct ContentView: View {
                 }
                 
                 Button(action: {
-                    // タスク内容の入力画面を表示させる
-                    toDoData.addToDo(body: "aa")
+                    // ボタン押下でAddToDoViewを表示
+                    showAdd.toggle()
                 }) {
                     Text("Add")
                         .frame(maxWidth: .infinity)
@@ -46,6 +48,9 @@ struct ContentView: View {
                         .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
                         .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
                 }
+                .sheet(isPresented: $showAdd, content: {
+                    AddToDoView(toDoData: toDoData)
+                })
                 
             }
         }

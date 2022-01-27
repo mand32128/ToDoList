@@ -29,9 +29,9 @@ class ToDoData: ObservableObject {
         self.toDoList.append(toDo)
     }
     
-    func deleteToDo(id: UUID) {
+    func deleteCompletedToDo() {
         for (index, toDo) in self.toDoList.enumerated() {
-            if toDo.id == id {
+            if toDo.isCompleted == true {
                 toDoList.remove(at: index)
             }
         }

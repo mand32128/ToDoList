@@ -25,7 +25,7 @@ struct ContentView: View {
             HStack {
                 
                 Button(action: {
-                    
+                    toDoData.deleteCompletedToDo()
                 }) {
                     Text("Delete")
                         .frame(maxWidth: .infinity)

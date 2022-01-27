@@ -15,16 +15,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            // ToDoをリスト表示　チェックボックスの追加が必要
-            List(toDoData.toDoList) { toDo in
-                Text(toDo.body)
-            }
+            TasksView(toDoList: $toDoData.toDoList)
             
             Spacer()
             
             HStack {
                 
                 Button(action: {
+                    // 完了済みのタスクを全削除
                     toDoData.deleteCompletedToDo()
                 }) {
                     Text("Delete")
